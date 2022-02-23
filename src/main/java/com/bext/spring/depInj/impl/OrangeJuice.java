@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 import com.bext.spring.depInj.Drink;
 
 @Component
+@Primary
 public class OrangeJuice implements Drink {
 
 	@Override
