@@ -2,6 +2,7 @@ package com.bext.spring.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.bext.spring.depInj.Drink;
@@ -12,7 +13,7 @@ public class EatService {
     
     private Drink drink;
 
-	public EatService(Drink drink) {
+	public EatService(@Qualifier("OrangeJuice") Drink drink) {
 		this.drink = drink;
 		LOG.info("Constructor EatService({})", drink.getName());
 	}
