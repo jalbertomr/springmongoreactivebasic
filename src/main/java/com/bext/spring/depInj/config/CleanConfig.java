@@ -13,7 +13,6 @@ import com.bext.spring.service.CleanService;
 
 @Configuration
 public class CleanConfig {
-    public static Logger LOG = LoggerFactory.getLogger(CleanConfig.class);
 	
     @Autowired
     List<Clean> clean;

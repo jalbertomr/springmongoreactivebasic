@@ -9,6 +9,6 @@ public class Coffee implements Drink{
 
 	@Override
 	public String getName() {
-		return "Coffe Drink";
+		return "Coffee Drink";
 	}
 }
