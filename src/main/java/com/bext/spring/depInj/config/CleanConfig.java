@@ -1,5 +1,7 @@
 package com.bext.spring.depInj.config;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +16,7 @@ public class CleanConfig {
     public static Logger LOG = LoggerFactory.getLogger(CleanConfig.class);
 	
     @Autowired
-    Clean clean;
+    List<Clean> clean;
     
     @Bean
 	public CleanService getCleanService() {

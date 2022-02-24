@@ -24,7 +24,6 @@ public class Application {
 	@Autowired
     public void setDrinkService(EatService eatService) {
 		eatService.logDrinkName();
-		
 	}
 	
 	public void callCleanConfig() {
