@@ -20,7 +20,7 @@ public class CleanService {
    
    public void logCleanName() {
 	   //LOG.info("CleanService.logCleanName() {}", clean.getName());
-	   clean.stream().map(Clean::getName).forEach(LOG::info);
+	   clean.stream().map(Clean::getName).map(e -> "CleanService available: " + e).forEach(LOG::info);
    }
    
 }

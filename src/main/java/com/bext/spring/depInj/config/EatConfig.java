@@ -20,7 +20,8 @@ public class EatConfig {
 		return new EatService( drink);
 	}
 	
-	@Bean EatService getEatServiceFromProperties(@Value("${Drink.name}") String eatServiceFromProperties) {
+	@Bean 
+	EatService getEatServiceFromProperties(@Value("${Drink.name}") String eatServiceFromProperties) {
 		Drink drinkFromProperties = (eatServiceFromProperties.equals("Coffee") == true) ? new Coffee() : new OrangeJuice() ;
 		return new EatService( drinkFromProperties);
 	}
